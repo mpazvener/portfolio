@@ -177,6 +177,43 @@ input[type=submit]:hover {
     margin-bottom: 15rem;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    display: none; 
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
 @media only screen and (max-width: 900px) {
     .title-container {
         width: 100%;
@@ -195,5 +232,19 @@ input[type=submit]:hover {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .logo {
+        max-height: 2rem;
+        padding-left: 15px;
+        padding-top: 15px;
     }
 }

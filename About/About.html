@@ -9,6 +9,7 @@
     <title>Paz Vener</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,6 +23,18 @@
                 <li><a href="../Contact/contact.html" target="_blank">Contact me</a></li>
             </ul>
         </nav>
+    </div>
+
+    <div class="topnav">
+        <img class="logo" src="logo.png" alt="logo" height="100">
+        <div id="myLinks">
+            <a href="../index.html" target="_blank">Projects</a>
+            <a href="./About.html" target="_blank">About</a>
+            <a href="../Contact/contact.html" target="_blank">Contact me</a>
+        </div>
+        <a href="javascript:void(0);" class="burger-icon icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
     <div class="title-container">
@@ -41,7 +54,16 @@
     <img src="FotoPerfil.jpg" alt="Foto de FotoPerfil" height="500
     ">
     <br>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 <footer>
