@@ -9,13 +9,7 @@
     border-radius: $small-radius;
     box-sizing: border-box;
 }
-$platform-colors: (
-  'light': white,
-  'medium-light': #ccc,
-  'large-light': #f2f2f2,
-  'green': #04AA6D,
-  'dark': #111
-);
+
 h1,
 h2,
 h3,
@@ -184,7 +178,7 @@ input[type=submit]:hover {
     padding: $medium-spacing;
     margin-top: 8rem;
     margin-left: $large-spacing;
-    margin-right: map-get($platform-colors, 'light');
+    margin-right: map-get($platform-colors, 'large-light');
     margin-bottom: $small-spacing;
 }
 
