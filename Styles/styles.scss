@@ -5,7 +5,7 @@
     padding: $small-spacing $medium-spacing;
     margin: $x-small-spacing $no-spacing;
     display: inline-block;
-    border: 1px solid $medium-light;
+    border: 1px solid map-get($platform-colors, 'medium-light');
     border-radius: $small-radius;
     box-sizing: border-box;
 }
@@ -42,15 +42,15 @@ li {
 }
 
 li a {
-    color: $dark;
+    color: map-get($platform-colors, 'dark');
     text-align: center;
     padding: $small-spacing $small-spacing;
     text-decoration: none;
 }
 
 li a:hover {
-    color: $light;
-    background-color: $dark;
+    color: map-get($platform-colors, 'light');
+    background-color: map-get($platform-colors, 'dark');
 }
 
 .menu-container {
@@ -77,6 +77,11 @@ li a:hover {
 .title,
 .recent-work-title,
 .recent-work-description {
+    padding-left: $small-spacing;
+}
+
+.avatar {
+    max-height:350px;
     padding-left: $small-spacing;
 }
 
@@ -158,28 +163,28 @@ input[type=submit] {
     margin: $x-small-spacing $no-spacing;
     border-radius: $small-radius;
     border: none;
-    color: $light;
-    background-color: $dark;
+    color: map-get($platform-colors, 'light');
+    background-color: map-get($platform-colors, 'dark');
     cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: $dark;
+    background-color: map-get($platform-colors, 'dark');
 }
 
 .form-container {
     border-radius: $small-radius;
-    background-color: $large-light;
+    background-color: map-get($platform-colors, 'large-light');
     padding: $medium-spacing;
     margin-top: 8rem;
     margin-left: $large-spacing;
-    margin-right: $large-light;
+    margin-right: map-get($platform-colors, 'large-light');
     margin-bottom: $small-spacing;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: $light;
+    background-color: map-get($platform-colors, 'light');
     position: relative;
     display: none; 
 }
@@ -189,7 +194,7 @@ input[type=submit]:hover {
 }
 
 .topnav a {
-    color: $dark;
+    color: map-get($platform-colors, 'dark');
     padding: $small-spacing $small-spacing;
     text-decoration: none;
     font-size: $font-size;
@@ -197,21 +202,21 @@ input[type=submit]:hover {
 }
 
 .topnav a.icon {
-    background: $light;
+    background: map-get($platform-colors, 'light');
     display: block;
     position: absolute;
     right: $no-spacing;
-    top: $no;
+    top: $no-spacing;
 }
 
 .topnav a:hover {
-    background-color: $medium-light;
-    color: $dark;
+    background-color: map-get($platform-colors, 'medium-light');
+    color: map-get($platform-colors, 'dark');
 }
 
 .active {
-    background-color: $green;
-    color: $light;
+    background-color: map-get($platform-colors, 'green');
+    color: map-get($platform-colors, 'light');
 }
 
 @media only screen and (max-width: 900px) {
@@ -246,5 +251,12 @@ input[type=submit]:hover {
         max-height: 2rem;
         padding-left: $small-spacing;
         padding-top: $small-spacing;
+    }
+
+    .avatar {
+        width: 100%;
+        height: 100%;
+        padding-left: $no-spacing;
+        object-fit: contain;
     }
 }
