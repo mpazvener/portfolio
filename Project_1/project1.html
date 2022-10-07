@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paz Vener portfolio</title>
+    <meta name="description" content="This is the portfolio of Paz Vener, a UX designer.">
+    <meta name=”robots” content=”index, follow”>
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Paz Vener Portfolio" />
+    <meta property="og:description" content="This is the portfolio of Paz Vener, a UX designer." />
+    <meta property="og:image" content="logo.png" />
+    <meta property="og:site_name" content="Paz Vener Portfolio" />
+    <meta name="keywords" content="UX, UI, User Experience Designer, Designer, UX Designer, Usability, Customer Experience." />
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <img class="logo" src="../logo.png" alt="Logo of the page" height="100">
+
+        <nav class="nav-bar">
+            <ul>
+                <li> <a href="../index.html" target="_blank">Projects</a></li>
+                <li><a href="./About.html" target="_blank">About</a></li>
+                <li><a href="../Contact/contact.html" target="_blank">Contact me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="topnav">
+        <img class="logo" src="../logo.png" alt="Logo of the page" height="100">
+        <div id="myLinks">
+            <a href="../index.html" target="_blank">Projects</a>
+            <a href="./About.html" target="_blank">About</a>
+            <a href="../Contact/contact.html" target="_blank">Contact me</a>
+        </div>
+        <a href="javascript:void(0);" class="burger-icon icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="title-container">
+        <h1 class="title">OSPL Project - Health Insurance Company</h1>
+    </div>
+
+    <br>
+    <p class="recent-work-description"> 
+        Problem:
+        <br>
+        Users found it annoying to do their health insurance paperwork from the computer. Also, they used to forget the medical shifts and miss them.
+        <br>
+        <br>
+        Solution:
+        <br>
+        We designed a Mobile App, where users can book appointments with reminders, have medical consultations and request refunds from the comfort of their cell phones.
+    </p>
+
+    <img class="avatar" src="OSPL.png" alt="Avatar">
+    <br>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+<footer>
+
+    <div class="footer-container">
+        <img class="logo" src="../logo.png" alt="Logo of the page" height="100">
+        <div class="footer-description">
+            <br>
+            8 Ashburner Street
+            Sydney, Australia
+            <br>
+            (61) 048714677
+            <br>
+            mpazvener@gmail.com
+        </div>
+    </div>
+
+</footer>
+
+</html>
